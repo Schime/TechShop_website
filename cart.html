@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/cart.css">
+    <title>TechShop - Cart</title>
+</head>
+<body>
+    <header>
+        <h1>TechShop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Categories</a>
+                    <ul id="categories-dropdown"></ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul id="products-dropdown"></ul>
+                </li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li>
+                    <a href="index_login.html">Log Out</a>
+                    <class id = "logout_button"></class>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <h3>Total: $<span id="total-amount">0.00</span></h3>
+            <button id="buy-button">Buy</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 TechShop. All rights reserved.</p>
+    </footer>
+    <script src="scripts/js_scripts/cart.js"></script>
+</body>
+</html>

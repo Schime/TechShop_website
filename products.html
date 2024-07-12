@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/products.css">
+    <title>TechShop - Products</title>
+</head>
+<body>
+    <header>
+        <h1>TechShop</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Categories</a>
+                    <ul id="categories-dropdown"></ul>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                    <ul id="products-dropdown"></ul>
+                </li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+
+                <li>
+                    <a href="index_login.html">Log Out</a>
+                    <class id = "logout_button"></class>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Best Deals</h2>
+            <div class="best-deals">
+                <div class="deal-item">
+                    <img src="images/Samsung/samsung_galaxy_s24_ultra_512GB.jpg" alt="Samsung Galaxy S24 Ultra">
+                    <p>Samsung Galaxy S24 Ultra - $1499.99</p>
+                    <button onclick="addToCart(7)">Add</button>
+                </div>
+                <div class="deal-item">
+                    <img src="images/Apple/iphone_14_pro_max_1TB.jpg" alt="Apple iPhone 14 Pro Max">
+                    <p>Apple iPhone 14 Pro Max - $1499.99</p>
+                    <button onclick="addToCart(8)">Add</button>
+                </div>
+            </div>
+            <section>
+                <h2>All Products</h2>
+                <div class="products-grid" id="products-grid"></div>
+            </section>
+    </main>
+    <footer>
+        <p>© 2024 TechShop. All rights reserved.</p>
+    </footer>
+    <script src="scripts/js_scripts/products.js"></script>
+</body>
+</html>
